@@ -3,7 +3,9 @@
 Requesting Data
 1) Make sure the server is running and that your code is set up to establish a connection to the server.
 2) Use the send_json function to send a properly formatted JSON object to the server for sorting.
+
 Example
+
 socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:5554")
 task_list = {
