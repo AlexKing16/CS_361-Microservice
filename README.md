@@ -39,6 +39,7 @@ Receiving Data
 3) This variable will now contain the JSON object with the tasks sorted in the correct order, and can be used in your code.
 
 Example - in conjunction with the above example
+
 sorted_task_list = socket.recv_json()
 print(f"Organized task list: {sorted_task_list}")
 --> Organized task list: {'sort_type': 'priority', 'tasks': [{'title': 'Another high priority', 'priority': 'High', 'due_date': '2024-02-19'}, {'title': 'Complete project proposal', 'priority': 'High', 'due_date': '2024-02-20'}, {'title': 'Buy groceries', 'priority': 'Medium', 'due_date': '2024-02-15'}, {'title': 'Finish coding assignment', 'priority': 'Low', 'due_date': '2024-02-25'}]}
